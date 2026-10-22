@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Riyansh Engineering Solution – Pest Control & Waterproofing Products, Lucknow</title>
+    <meta name="description"
+        content="Buy professional pest control and waterproofing products in Lucknow. Insect sprays, rat bait stations, UV traps, PU injection kits, anti-termite chemicals and more. Call Now!" />
+    <!-- DejaVu Font -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/dejavu-sans" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .7s ease, transform .7s ease
+        }
+
+        .reveal-on-scroll.revealed {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        #backToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--color-primary-red);
+            color: #fff;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(163, 25, 34, .35);
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease;
+            z-index: 900
+        }
+
+        #backToTopBtn.visible {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .products-page-section {
+            padding: 80px 0;
+            background: var(--color-surface-alt)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-announcement">
+        <div class="container">
+            <div class="top-left"><span><i class="fa-solid fa-phone"></i> +91 8840589179</span><span><i
+                        class="fa-solid fa-envelope"></i> riyanshengineeringsolution@gmail.com</span><span><i
+                        class="fa-solid fa-location-dot"></i> Jankipuram, Lucknow 226021</span></div>
+            <div class="top-right"><a href="tel:+918840589179"><i class="fa-solid fa-phone-volume"></i> Free Inspection
+                    – Call Now</a></div>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <a href="index.html" class="brand-logo-wrap"><img src="assets/images/logo.png" alt="Logo"
+                    class="logo-img" />
+                <div class="brand-text-block"><span class="company-title">Riyansh Engineering<br />Solution</span></div>
+            </a>
+            <nav class="nav-menu-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="has-dropdown">
+                    <a href="services.html" class="nav-link">Services <i
+                            class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services/cockroach-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-bug"></i>Cockroach Control</a>
+                        <a href="services/bed-bugs-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-bed"></i>Bed-Bugs Control</a>
+                        <a href="services/termite-pest-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-shield"></i>Termite Pest Control</a>
+                        <a href="services/rats-control.html" class="dropdown-item"><i class="fa-solid fa-paw"></i>Rats
+                            Control</a>
+                        <a href="services/mosquito-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-droplet-slash"></i>Mosquito Control</a>
+                        <a href="services/sanitization-services.html" class="dropdown-item"><i
+                                class="fa-solid fa-spray-can-sparkles"></i>Sanitization</a>
+                    </div>
+                </div>
+                <div class="has-dropdown">
+                    <a href="wp-services.html" class="nav-link">WP Services <i
+                            class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="wp-services/epoxy-injection.html" class="dropdown-item"><i
+                                class="fa-solid fa-syringe"></i>Epoxy Injection</a>
+                        <a href="wp-services/pu-injection.html" class="dropdown-item"><i
+                                class="fa-solid fa-fill-drip"></i>PU Injection</a>
+                        <a href="wp-services/rcc-crack-repair.html" class="dropdown-item"><i
+                                class="fa-solid fa-wrench"></i>RCC Crack Repair</a>
+                        <a href="wp-services/advanced-waterproofing.html" class="dropdown-item"><i
+                                class="fa-solid fa-droplet"></i>Advanced Waterproofing</a>
+                    </div>
+                </div>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+918840589179" class="btn-red-pill"><i class="fa-solid fa-phone"></i><span
+                        class="phone-text">+91 8840589179</span></a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <nav class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="drawer-header"><a href="index.html" class="brand-logo-wrap"><img src="assets/images/logo.png"
+                    alt="Logo" style="width:40px;height:40px;object-fit:contain;" /><span class="drawer-brand-title">Riyansh Engineering<br />Solution</span></a><button class="close-drawer-btn" id="closeDrawerBtn"><i
+                    class="fa-solid fa-xmark"></i></button></div>
+        <div class="drawer-body">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+                <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="wp-services.html" class="mobile-nav-link">WP Services</a></li>
+                <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">Products</a></li>
+                <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="drawer-footer"><a href="tel:+918840589179" class="btn-red-pill"
+                style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call: +91 8840589179</a><a
+                href="https://wa.me/918840589179" class="btn-whatsapp-pill" style="width:100%;justify-content:center;"
+                target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div>
+    </nav>
+
+    <section class="inner-page-hero">
+        <div class="container" style="max-width:800px;margin:auto;text-align:center;">
+            <h1>Our Products</h1>
+            <nav class="breadcrumb" style="justify-content:center;"><a href="index.html">Home</a><i
+                    class="fa-solid fa-chevron-right" style="font-size:.65rem;"></i><span>Products</span></nav>
+        </div>
+    </section>
+
+    <section class="products-page-section">
+        <div class="container">
+            <div class="section-title-wrap reveal-on-scroll">
+                <span class="kicker-gold">Our Recommendation</span>
+                <h2 class="heading-serif">Professional Protection Products</h2>
+                <p>High-performance products for pest control & waterproofing applications. Call us now to order or
+                    inquire about any product.</p>
+            </div>
+
+            <div class="product-filter-tabs">
+                <button class="filter-tab-btn active" data-filter="all">All Products</button>
+                <button class="filter-tab-btn" data-filter="pest">Pest Control</button>
+                <button class="filter-tab-btn" data-filter="termite">Anti-Termite</button>
+                <button class="filter-tab-btn" data-filter="waterproofing">Waterproofing</button>
+                <button class="filter-tab-btn" data-filter="trap">Traps & Equipment</button>
+                <button class="filter-tab-btn" data-filter="sanitization">Sanitization</button>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card reveal-on-scroll" data-category="pest">
+                    <div class="product-image-container"><img src="assets/images/product-spray.jpg"
+                            alt="Insect Defense Pro Spray" loading="lazy" /></div>
+                    <h3 class="product-title">Insect Defense Pro Spray</h3>
+                    <p class="product-desc">Commercial-grade insecticide spray for crawling & flying insects.
+                        Long-lasting protection, indoor & outdoor use.</p><a href="tel:+918840589179"
+                        class="btn-call-now"><i class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="termite">
+                    <div class="product-image-container"><img src="assets/images/product-anti-termite.jpg"
+                            alt="Termi-Shield Termiticide" loading="lazy" /></div>
+                    <h3 class="product-title">Termi-Shield Termiticide</h3>
+                    <p class="product-desc">Long-lasting soil treatment chemical for pre & post construction
+                        anti-termite barriers. Effective against all termite species.</p><a href="tel:+918840589179"
+                        class="btn-call-now"><i class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="pest">
+                    <div class="product-image-container"><img src="assets/images/product-rat-station.jpg"
+                            alt="Rat Bait Station" loading="lazy" /></div>
+                    <h3 class="product-title">Rat Bait Station Box</h3>
+                    <p class="product-desc">Tamper-resistant, lockable bait station with green bait blocks for effective
+                        & safe rodent elimination.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="trap">
+                    <div class="product-image-container"><img src="assets/images/product-uv-trap.jpg"
+                            alt="UV Electric Fly Killer" loading="lazy" /></div>
+                    <h3 class="product-title">UV Electric Insect Killer</h3>
+                    <p class="product-desc">Commercial UV fly killer trap. Ideal for kitchens, hospitals, offices & food
+                        processing areas. Silent & effective.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="waterproofing">
+                    <div class="product-image-container"><img src="assets/images/product-pu-injection.jpg"
+                            alt="PU Crack Injection Kit" loading="lazy" /></div>
+                    <h3 class="product-title">Crack-Seal PU Injection Kit</h3>
+                    <p class="product-desc">High-performance polyurethane injection resin kit with packer nozzles for
+                        sealing active concrete cracks & leaks.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="sanitization">
+                    <div class="product-image-container"><img src="assets/images/product-sanitizer.jpg"
+                            alt="BioSafe Disinfectant Spray" loading="lazy" /></div>
+                    <h3 class="product-title">BioSafe Disinfectant Spray</h3>
+                    <p class="product-desc">WHO-grade antimicrobial disinfectant for sanitization of homes, hospitals,
+                        offices & public spaces.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="waterproofing">
+                    <div class="product-image-container"><img src="assets/images/product-epoxy.jpg"
+                            alt="Epoxy Injection Resin Kit" loading="lazy" /></div>
+                    <h3 class="product-title">Epoxy Injection Resin</h3>
+                    <p class="product-desc">Structural grade epoxy resin for low & high pressure injection to restore
+                        load-bearing concrete capacity.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="waterproofing">
+                    <div class="product-image-container"><img src="assets/images/product-membrane.jpg"
+                            alt="APP/SBS Waterproofing Membrane Roll" loading="lazy" /></div>
+                    <h3 class="product-title">APP/SBS Membrane Roll</h3>
+                    <p class="product-desc">Torch-applied bituminous waterproofing membrane for roof terraces, basements
+                        & retaining walls.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="pest">
+                    <div class="product-image-container"><img src="assets/images/product-larvicide.jpg"
+                            alt="Mosquito Larvicide Granules" loading="lazy" /></div>
+                    <h3 class="product-title">Mosquito Larvicide Granules</h3>
+                    <p class="product-desc">Highly effective BTi-based larvicide granules for water bodies, drains &
+                        breeding sites. Safe for humans & pets.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="waterproofing">
+                    <div class="product-image-container"><img src="assets/images/product-pu-injection.jpg"
+                            alt="Crystalline WP Chemical" loading="lazy" /></div>
+                    <h3 class="product-title">Crystalline WP Powder</h3>
+                    <p class="product-desc">Penetrating crystalline waterproofing compound for concrete surfaces —
+                        self-healing protection for water tanks & basements.</p><a href="tel:+918840589179"
+                        class="btn-call-now"><i class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="trap">
+                    <div class="product-image-container"><img src="assets/images/product-rat-station.jpg"
+                            alt="Professional Glue Boards" loading="lazy" /></div>
+                    <h3 class="product-title">Professional Glue Boards</h3>
+                    <p class="product-desc">Heavy-duty adhesive glue boards for monitoring & trapping rodents, insects &
+                        other crawling pests.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+
+                <article class="product-card reveal-on-scroll" data-category="termite">
+                    <div class="product-image-container"><img src="assets/images/product-anti-termite.jpg"
+                            alt="Termite Bait Station System" loading="lazy" /></div>
+                    <h3 class="product-title">Termite Bait Station Kit</h3>
+                    <p class="product-desc">In-ground termite monitoring & baiting station for long-term colony
+                        elimination without drilling or spraying.</p><a href="tel:+918840589179" class="btn-call-now"><i
+                            class="fa-solid fa-phone"></i> Call Now</a>
+                </article>
+            </div>
+
+            <!-- Inquiry CTA Banner -->
+            <div
+                style="margin-top:70px;background:linear-gradient(135deg,#a31922,#700c14);border-radius:var(--radius-card);padding:50px 40px;text-align:center;color:#fff;">
+                <h2 style="font-family:var(--font-heading);font-size:2rem;margin-bottom:14px;">Need Product Assistance?
+                </h2>
+                <p style="font-size:1.05rem;color:rgba(255,255,255,0.88);max-width:600px;margin:0 auto 28px auto;">Our
+                    expert team will help you choose the right products for your specific pest control or waterproofing
+                    needs. Call us or send a WhatsApp message for instant guidance.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+                    <a href="tel:+918840589179" class="btn-red-pill"
+                        style="background:#fff;color:var(--color-primary-red) !important;border-color:#fff;"><i
+                            class="fa-solid fa-phone"></i> Call Now: +91 8840589179</a>
+                    <a href="https://wa.me/918840589179?text=Hello%2C%20I%20need%20to%20inquire%20about%20your%20products."
+                        class="btn-whatsapp-pill" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-wrap"><img src="assets/images/logo.png" alt="Riyansh Engineering Solution"
+                            class="footer-logo" /><span class="footer-brand-title">Riyansh Engineering Solution</span>
+                    </div>
+                    <p>Trusted experts in Pest Control, Anti-Termite, and Waterproofing services, providing reliable
+                        protection for homes, buildings, and businesses.</p>
+                    <div class="footer-social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a
+                            href="#"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/918840589179"
+                            target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i
+                                class="fa-brands fa-youtube"></i></a></div>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                        <li><a href="wp-services.html"><i class="fa-solid fa-chevron-right"></i> WP Services</a></li>
+                        <li><a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="services/cockroach-control.html"><i class="fa-solid fa-chevron-right"></i>
+                                Cockroach Control</a></li>
+                        <li><a href="services/termite-pest-control.html"><i class="fa-solid fa-chevron-right"></i>
+                                Termite Control</a></li>
+                        <li><a href="services/rats-control.html"><i class="fa-solid fa-chevron-right"></i> Rats
+                                Control</a></li>
+                        <li><a href="wp-services/epoxy-injection.html"><i class="fa-solid fa-chevron-right"></i> Epoxy
+                                Injection</a></li>
+                        <li><a href="wp-services/advanced-waterproofing.html"><i class="fa-solid fa-chevron-right"></i>
+                                Advanced Waterproofing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item"><i class="fa-solid fa-location-dot"></i>
+                            <address style="font-style:normal;">2/360, Sector-H, Jankipuram, Lucknow 226021</address>
+                        </li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+918840589179">+91
+                                8840589179</a></li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a
+                                href="mailto:riyanshengineeringsolution@gmail.com"
+                                style="word-break:break-all;">riyanshengineeringsolution@gmail.com</a></li>
+                    </ul>
+                    <div style="margin-top:22px;"><a href="tel:+918840589179" class="btn-red-pill"
+                            style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-watermark-wrap" aria-hidden="true"><span class="footer-watermark-text">RIYANSH</span></div>
+        <div class="footer-bottom-bar">
+            <div class="container"><span>&copy; 2026 Riyansh Engineering Solution. All rights
+                    reserved.</span><span>Designed &amp; Developed by <span class="nexkraft-badge">Nexkrraft
+                        labs</span></span></div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

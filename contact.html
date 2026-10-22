@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Riyansh Engineering Solution – Pest Control & Waterproofing, Lucknow</title>
+    <meta name="description"
+        content="Contact Riyansh Engineering Solution for pest control, anti-termite & waterproofing services in Lucknow. Call +91 8840589179 or email riyanshengineeringsolution@gmail.com for free inspection." />
+    <!-- DejaVu Font -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/dejavu-sans" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .7s ease, transform .7s ease
+        }
+
+        .reveal-on-scroll.revealed {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        #backToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--color-primary-red);
+            color: #fff;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(163, 25, 34, .35);
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease;
+            z-index: 900
+        }
+
+        #backToTopBtn.visible {
+            opacity: 1;
+            visibility: visible
+        }
+
+        .map-embed {
+            width: 100%;
+            height: 320px;
+            border-radius: var(--radius-card);
+            border: none;
+            margin-top: 24px;
+            filter: grayscale(20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-announcement">
+        <div class="container">
+            <div class="top-left"><span><i class="fa-solid fa-phone"></i> +91 8840589179</span><span><i
+                        class="fa-solid fa-envelope"></i> riyanshengineeringsolution@gmail.com</span><span><i
+                        class="fa-solid fa-location-dot"></i> Jankipuram, Lucknow 226021</span></div>
+            <div class="top-right"><a href="tel:+918840589179"><i class="fa-solid fa-phone-volume"></i> Free Inspection
+                    – Call Now</a></div>
+        </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <a href="index.html" class="brand-logo-wrap"><img src="assets/images/logo.png" alt="Logo"
+                    class="logo-img" />
+                <div class="brand-text-block"><span class="company-title">Riyansh Engineering<br />Solution</span></div>
+            </a>
+            <nav class="nav-menu-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="has-dropdown">
+                    <a href="services.html" class="nav-link">Services <i
+                            class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services/cockroach-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-bug"></i>Cockroach Control</a>
+                        <a href="services/bed-bugs-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-bed"></i>Bed-Bugs Control</a>
+                        <a href="services/termite-pest-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-shield"></i>Termite Pest Control</a>
+                        <a href="services/rats-control.html" class="dropdown-item"><i class="fa-solid fa-paw"></i>Rats
+                            Control</a>
+                        <a href="services/mosquito-control.html" class="dropdown-item"><i
+                                class="fa-solid fa-droplet-slash"></i>Mosquito Control</a>
+                        <a href="services/sanitization-services.html" class="dropdown-item"><i
+                                class="fa-solid fa-spray-can-sparkles"></i>Sanitization</a>
+                    </div>
+                </div>
+                <div class="has-dropdown">
+                    <a href="wp-services.html" class="nav-link">WP Services <i
+                            class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="wp-services/epoxy-injection.html" class="dropdown-item"><i
+                                class="fa-solid fa-syringe"></i>Epoxy Injection</a>
+                        <a href="wp-services/pu-injection.html" class="dropdown-item"><i
+                                class="fa-solid fa-fill-drip"></i>PU Injection</a>
+                        <a href="wp-services/rcc-crack-repair.html" class="dropdown-item"><i
+                                class="fa-solid fa-wrench"></i>RCC Crack Repair</a>
+                        <a href="wp-services/advanced-waterproofing.html" class="dropdown-item"><i
+                                class="fa-solid fa-droplet"></i>Advanced Waterproofing</a>
+                    </div>
+                </div>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+918840589179" class="btn-red-pill"><i class="fa-solid fa-phone"></i><span
+                        class="phone-text">+91 8840589179</span></a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <nav class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="drawer-header"><a href="index.html" class="brand-logo-wrap"><img src="assets/images/logo.png"
+                    alt="Logo" style="width:40px;height:40px;object-fit:contain;" /><span class="drawer-brand-title">Riyansh Engineering<br />Solution</span></a><button class="close-drawer-btn" id="closeDrawerBtn"><i
+                    class="fa-solid fa-xmark"></i></button></div>
+        <div class="drawer-body">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+                <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="wp-services.html" class="mobile-nav-link">WP Services</a></li>
+                <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">Products</a></li>
+                <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="drawer-footer"><a href="tel:+918840589179" class="btn-red-pill"
+                style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call: +91 8840589179</a><a
+                href="https://wa.me/918840589179" class="btn-whatsapp-pill" style="width:100%;justify-content:center;"
+                target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a></div>
+    </nav>
+
+    <section class="inner-page-hero">
+        <div class="container" style="max-width:800px;margin:auto;text-align:center;">
+            <h1>Contact Us</h1>
+            <nav class="breadcrumb" style="justify-content:center;"><a href="index.html">Home</a><i
+                    class="fa-solid fa-chevron-right" style="font-size:.65rem;"></i><span>Contact</span></nav>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel">
+                    <div>
+                        <span class="kicker-gold">Reach Out</span>
+                        <h2 class="heading-serif" style="font-size:2rem;margin-bottom:14px;">Get in Touch With Us</h2>
+                        <p style="color:var(--color-text-muted);margin-bottom:30px;">Our team is ready to assist you
+                            with pest control, anti-termite treatment, and waterproofing services. Contact us for a free
+                            inspection and consultation.</p>
+                    </div>
+
+                    <div class="contact-info-card reveal-on-scroll">
+                        <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>2/360, Sector-H, Jankipuram,<br>Lucknow 226021, Uttar Pradesh</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal-on-scroll">
+                        <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <a href="tel:+918840589179"
+                                style="font-size:1.1rem;font-weight:700;color:var(--color-primary-red);">+91
+                                8840589179</a>
+                            <p style="margin-top:4px;">Mon – Sat: 8:00 AM – 8:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal-on-scroll">
+                        <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <a href="mailto:riyanshengineeringsolution@gmail.com"
+                                style="font-size:0.9rem;color:var(--color-primary-red);word-break:break-all;">riyanshengineeringsolution@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card reveal-on-scroll">
+                        <div class="card-icon" style="background:#dcfce7;color:#16a34a;"><i
+                                class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/918840589179?text=Hello%2C%20I%20need%20pest%20control%20or%20waterproofing%20services."
+                                target="_blank" rel="noopener" style="color:#16a34a;font-weight:700;">+91 8840589179</a>
+                            <p style="margin-top:4px;">Quick response via WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Embed -->
+                    <iframe class="map-embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4!2d80.95!3d26.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957f04be9acf5%3A0x52c2e48f45caaad7!2sJankipuram%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1697098765432!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Riyansh Engineering Solution Location Map"
+                        aria-label="Map showing location of Riyansh Engineering Solution in Jankipuram, Lucknow">
+                    </iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="quote-form-wrap reveal-on-scroll">
+                    <h3>Request a Free Inspection</h3>
+                    <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Your first name"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Your last name" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number *</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91 XXXXX XXXXX"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAddress">Email Address</label>
+                                <input type="email" id="emailAddress" name="emailAddress"
+                                    placeholder="your@email.com" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Service Required *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <optgroup label="Pest Control Services">
+                                    <option>Cockroach Control</option>
+                                    <option>Bed-Bugs Control</option>
+                                    <option>Ant Control</option>
+                                    <option>Termite Pest Control</option>
+                                    <option>Termite Treatment</option>
+                                    <option>Rats Control</option>
+                                    <option>Mosquito Control</option>
+                                    <option>Flea and Tick Control</option>
+                                    <option>Flies Control</option>
+                                    <option>Sanitization Services</option>
+                                    <option>Lizard Control</option>
+                                </optgroup>
+                                <optgroup label="Waterproofing Services">
+                                    <option>Epoxy Injection Services</option>
+                                    <option>PU Injection Services</option>
+                                    <option>Cementitious Injection</option>
+                                    <option>RCC Crack Repair</option>
+                                    <option>Instant Leakage Stop</option>
+                                    <option>RCC Repair & Renovation</option>
+                                    <option>Advanced Waterproofing Systems</option>
+                                    <option>Authorized Applicator / WP Products</option>
+                                </optgroup>
+                                <option>Multiple Services</option>
+                                <option>Not Sure – Need Inspection</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="" disabled selected>Select property type...</option>
+                                <option>Residential Home</option>
+                                <option>Apartment / Flat</option>
+                                <option>Commercial Office</option>
+                                <option>Restaurant / Hotel</option>
+                                <option>Factory / Industrial</option>
+                                <option>New Construction</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message / Description</label>
+                            <textarea id="message" name="message"
+                                placeholder="Describe your pest problem or waterproofing issue in detail. Include any relevant information such as duration, severity, property area, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-red-pill" id="submitContactForm"
+                            style="width:100%;justify-content:center;font-size:1rem;padding:15px 24px;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message & Request Inspection
+                        </button>
+                    </form>
+
+                    <!-- Quick Contact Alternatives -->
+                    <div
+                        style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;padding-top:24px;border-top:1px solid var(--color-border-subtle);">
+                        <a href="tel:+918840589179" class="btn-red-pill" style="flex:1;justify-content:center;"><i
+                                class="fa-solid fa-phone"></i> Call Directly</a>
+                        <a href="https://wa.me/918840589179?text=Hello%2C%20I%20filled%20the%20form%20on%20your%20website%20and%20need%20assistance."
+                            class="btn-whatsapp-pill" style="flex:1;justify-content:center;" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-wrap"><img src="assets/images/logo.png" alt="Riyansh Engineering Solution"
+                            class="footer-logo" /><span class="footer-brand-title">Riyansh Engineering Solution</span>
+                    </div>
+                    <p>Trusted experts in Pest Control, Anti-Termite, and Waterproofing services, providing reliable
+                        protection for homes, buildings, and businesses.</p>
+                    <div class="footer-social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a
+                            href="#"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/918840589179"
+                            target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i
+                                class="fa-brands fa-youtube"></i></a></div>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                        <li><a href="wp-services.html"><i class="fa-solid fa-chevron-right"></i> WP Services</a></li>
+                        <li><a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="services/cockroach-control.html"><i class="fa-solid fa-chevron-right"></i>
+                                Cockroach Control</a></li>
+                        <li><a href="services/termite-pest-control.html"><i class="fa-solid fa-chevron-right"></i>
+                                Termite Control</a></li>
+                        <li><a href="services/rats-control.html"><i class="fa-solid fa-chevron-right"></i> Rats
+                                Control</a></li>
+                        <li><a href="services/mosquito-control.html"><i class="fa-solid fa-chevron-right"></i> Mosquito
+                                Control</a></li>
+                        <li><a href="wp-services/epoxy-injection.html"><i class="fa-solid fa-chevron-right"></i> Epoxy
+                                Injection</a></li>
+                        <li><a href="wp-services/advanced-waterproofing.html"><i class="fa-solid fa-chevron-right"></i>
+                                Advanced Waterproofing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item"><i class="fa-solid fa-location-dot"></i>
+                            <address style="font-style:normal;">2/360, Sector-H, Jankipuram, Lucknow 226021</address>
+                        </li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+918840589179">+91
+                                8840589179</a></li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a
+                                href="mailto:riyanshengineeringsolution@gmail.com"
+                                style="word-break:break-all;">riyanshengineeringsolution@gmail.com</a></li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-clock"></i><span>Mon – Sat: 8:00 AM – 8:00
+                                PM</span></li>
+                    </ul>
+                    <div style="margin-top:22px;"><a href="tel:+918840589179" class="btn-red-pill"
+                            style="width:100%;justify-content:center;"><i class="fa-solid fa-phone"></i> Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-watermark-wrap" aria-hidden="true"><span class="footer-watermark-text">RIYANSH</span></div>
+        <div class="footer-bottom-bar">
+            <div class="container"><span>&copy; 2026 Riyansh Engineering Solution. All rights
+                    reserved.</span><span>Designed &amp; Developed by <span class="nexkraft-badge">Nexkrraft
+                        labs</span></span></div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
