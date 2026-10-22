@@ -2870,6 +2870,12 @@ button, input, select, textarea {
 }
 
 @media (max-width: 640px) {
+  .hero-text-overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
   .home-image-section {
     padding: 40px 0;
   }
